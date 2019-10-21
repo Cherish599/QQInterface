@@ -45,6 +45,70 @@ namespace QQInterface
             labTemperature2.Text = r[12].Trim();    //明天的温度区间
             labTemperature3.Text = r[17].Trim();    //后天的温度区间
 
+
+
+            //今天的天气图标变化
+            if (r[6].Substring(r[6].Length - 1, 1) == "雨")
+            {
+                pictureBox1.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-16.png");
+                BackgroundImage = Image.FromFile("weatherBg\\雷电1.jpeg");
+            }
+            else if (r[6].Substring(r[6].Length - 2, 2) == "多云")
+            {
+                pictureBox1.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-09.png");
+            }
+            else if (r[6].Substring(r[6].Length - 1, 1) == "晴")
+            {
+                pictureBox1.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-08.png");
+            }
+            else if (r[6].Substring(r[6].Length - 1, 1) == "阴")
+            {
+                pictureBox1.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-03.png");
+            }
+            
+
+            //明天的天气图标变化
+            if (r[13].Substring(r[13].Length - 1, 1) == "雨")
+            {
+                pictureBox2.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-16.png");
+            }
+            else if (r[13].Substring(r[13].Length - 2, 2) == "多云")
+            {
+                pictureBox2.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-09.png");
+            }
+            else if (r[13].Substring(r[13].Length - 1, 1) == "晴")
+            {
+                pictureBox2.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-08.png");
+            }
+            else if (r[13].Substring(r[13].Length - 1, 1) == "阴")
+            {
+                pictureBox2.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-03.png");
+            }
+
+
+            //后天的天气图标变化
+            if (r[18].Substring(r[18].Length - 1, 1) == "雨")
+            {
+                pictureBox3.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-16.png");
+            }
+            else if (r[18].Substring(r[18].Length - 2, 2) == "多云")
+            {
+                pictureBox3.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-09.png");
+            }
+            else if (r[18].Substring(r[18].Length - 1, 1) == "晴")
+            {
+                pictureBox3.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-08.png");
+            }
+            else if (r[18].Substring(r[18].Length - 1, 1) == "阴")
+            {
+                pictureBox3.BackgroundImage = Image.FromFile("weatherPic\\weather-forecast-03.png");
+            }
+
+        }
+
+        private void labTemperature2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

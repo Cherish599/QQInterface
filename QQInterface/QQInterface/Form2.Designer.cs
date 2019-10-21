@@ -30,16 +30,22 @@
         {
             this.labCity = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labTemperature3 = new System.Windows.Forms.Label();
+            this.labTemperature2 = new System.Windows.Forms.Label();
+            this.labTemperature1 = new System.Windows.Forms.Label();
+            this.labAfterTomorrow = new System.Windows.Forms.Label();
+            this.labTomorrow = new System.Windows.Forms.Label();
+            this.labToday = new System.Windows.Forms.Label();
             this.labTem = new System.Windows.Forms.Label();
             this.labWeather = new System.Windows.Forms.Label();
             this.labAirQuality = new System.Windows.Forms.Label();
-            this.labToday = new System.Windows.Forms.Label();
-            this.labTomorrow = new System.Windows.Forms.Label();
-            this.labAfterTomorrow = new System.Windows.Forms.Label();
-            this.labTemperature1 = new System.Windows.Forms.Label();
-            this.labTemperature2 = new System.Windows.Forms.Label();
-            this.labTemperature3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labCity
@@ -56,6 +62,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.labTemperature3);
             this.panel1.Controls.Add(this.labTemperature2);
             this.panel1.Controls.Add(this.labTemperature1);
@@ -67,6 +76,107 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(507, 207);
             this.panel1.TabIndex = 4;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(367, 114);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(83, 71);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(196, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(83, 71);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 114);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 71);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labTemperature3
+            // 
+            this.labTemperature3.BackColor = System.Drawing.Color.Transparent;
+            this.labTemperature3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labTemperature3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labTemperature3.Location = new System.Drawing.Point(342, 69);
+            this.labTemperature3.Name = "labTemperature3";
+            this.labTemperature3.Size = new System.Drawing.Size(139, 31);
+            this.labTemperature3.TabIndex = 13;
+            this.labTemperature3.Text = "气温";
+            this.labTemperature3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labTemperature2
+            // 
+            this.labTemperature2.BackColor = System.Drawing.Color.Transparent;
+            this.labTemperature2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labTemperature2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labTemperature2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labTemperature2.Location = new System.Drawing.Point(163, 69);
+            this.labTemperature2.Name = "labTemperature2";
+            this.labTemperature2.Size = new System.Drawing.Size(141, 31);
+            this.labTemperature2.TabIndex = 12;
+            this.labTemperature2.Text = "气温";
+            this.labTemperature2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labTemperature2.Click += new System.EventHandler(this.labTemperature2_Click);
+            // 
+            // labTemperature1
+            // 
+            this.labTemperature1.BackColor = System.Drawing.Color.Transparent;
+            this.labTemperature1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labTemperature1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labTemperature1.Location = new System.Drawing.Point(3, 69);
+            this.labTemperature1.Name = "labTemperature1";
+            this.labTemperature1.Size = new System.Drawing.Size(129, 31);
+            this.labTemperature1.TabIndex = 11;
+            this.labTemperature1.Text = "气温";
+            this.labTemperature1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labAfterTomorrow
+            // 
+            this.labAfterTomorrow.BackColor = System.Drawing.Color.Transparent;
+            this.labAfterTomorrow.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labAfterTomorrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labAfterTomorrow.Location = new System.Drawing.Point(379, 21);
+            this.labAfterTomorrow.Name = "labAfterTomorrow";
+            this.labAfterTomorrow.Size = new System.Drawing.Size(71, 31);
+            this.labAfterTomorrow.TabIndex = 10;
+            this.labAfterTomorrow.Text = "后天";
+            // 
+            // labTomorrow
+            // 
+            this.labTomorrow.BackColor = System.Drawing.Color.Transparent;
+            this.labTomorrow.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labTomorrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labTomorrow.Location = new System.Drawing.Point(205, 21);
+            this.labTomorrow.Name = "labTomorrow";
+            this.labTomorrow.Size = new System.Drawing.Size(74, 31);
+            this.labTomorrow.TabIndex = 9;
+            this.labTomorrow.Text = "明天";
+            // 
+            // labToday
+            // 
+            this.labToday.BackColor = System.Drawing.Color.Transparent;
+            this.labToday.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+            this.labToday.Location = new System.Drawing.Point(36, 21);
+            this.labToday.Name = "labToday";
+            this.labToday.Size = new System.Drawing.Size(129, 31);
+            this.labToday.TabIndex = 8;
+            this.labToday.Text = "今天";
             // 
             // labTem
             // 
@@ -101,72 +211,6 @@
             this.labAirQuality.TabIndex = 7;
             this.labAirQuality.Text = "空气质量";
             // 
-            // labToday
-            // 
-            this.labToday.BackColor = System.Drawing.Color.Transparent;
-            this.labToday.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.labToday.Location = new System.Drawing.Point(36, 21);
-            this.labToday.Name = "labToday";
-            this.labToday.Size = new System.Drawing.Size(129, 31);
-            this.labToday.TabIndex = 8;
-            this.labToday.Text = "今天";
-            // 
-            // labTomorrow
-            // 
-            this.labTomorrow.BackColor = System.Drawing.Color.Transparent;
-            this.labTomorrow.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labTomorrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.labTomorrow.Location = new System.Drawing.Point(196, 21);
-            this.labTomorrow.Name = "labTomorrow";
-            this.labTomorrow.Size = new System.Drawing.Size(74, 31);
-            this.labTomorrow.TabIndex = 9;
-            this.labTomorrow.Text = "明天";
-            // 
-            // labAfterTomorrow
-            // 
-            this.labAfterTomorrow.BackColor = System.Drawing.Color.Transparent;
-            this.labAfterTomorrow.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labAfterTomorrow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.labAfterTomorrow.Location = new System.Drawing.Point(372, 21);
-            this.labAfterTomorrow.Name = "labAfterTomorrow";
-            this.labAfterTomorrow.Size = new System.Drawing.Size(71, 31);
-            this.labAfterTomorrow.TabIndex = 10;
-            this.labAfterTomorrow.Text = "后天";
-            // 
-            // labTemperature1
-            // 
-            this.labTemperature1.BackColor = System.Drawing.Color.Transparent;
-            this.labTemperature1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labTemperature1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.labTemperature1.Location = new System.Drawing.Point(36, 73);
-            this.labTemperature1.Name = "labTemperature1";
-            this.labTemperature1.Size = new System.Drawing.Size(129, 31);
-            this.labTemperature1.TabIndex = 11;
-            this.labTemperature1.Text = "气温";
-            // 
-            // labTemperature2
-            // 
-            this.labTemperature2.BackColor = System.Drawing.Color.Transparent;
-            this.labTemperature2.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labTemperature2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.labTemperature2.Location = new System.Drawing.Point(196, 73);
-            this.labTemperature2.Name = "labTemperature2";
-            this.labTemperature2.Size = new System.Drawing.Size(141, 31);
-            this.labTemperature2.TabIndex = 12;
-            this.labTemperature2.Text = "气温";
-            // 
-            // labTemperature3
-            // 
-            this.labTemperature3.BackColor = System.Drawing.Color.Transparent;
-            this.labTemperature3.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labTemperature3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
-            this.labTemperature3.Location = new System.Drawing.Point(356, 73);
-            this.labTemperature3.Name = "labTemperature3";
-            this.labTemperature3.Size = new System.Drawing.Size(139, 31);
-            this.labTemperature3.TabIndex = 13;
-            this.labTemperature3.Text = "气温";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -183,6 +227,9 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -199,5 +246,8 @@
         private System.Windows.Forms.Label labAfterTomorrow;
         private System.Windows.Forms.Label labTomorrow;
         private System.Windows.Forms.Label labToday;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
