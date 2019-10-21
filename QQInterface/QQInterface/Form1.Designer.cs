@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnTZ = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnTZ
+            // 
+            this.btnTZ.Location = new System.Drawing.Point(343, 187);
+            this.btnTZ.Name = "btnTZ";
+            this.btnTZ.Size = new System.Drawing.Size(115, 77);
+            this.btnTZ.TabIndex = 1;
+            this.btnTZ.Text = "点我一下";
+            this.btnTZ.UseVisualStyleBackColor = true;
+            this.btnTZ.Click += new System.EventHandler(this.btnTZ_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTZ);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnTZ;
     }
 }
 

@@ -16,5 +16,12 @@ namespace QQInterface
         {
             InitializeComponent();
         }
+
+        private void btnTZ_Click(object sender, EventArgs e)
+        {
+
+            Form2 f = new Form2();
+            f.Show();
+        }
     }
 }
